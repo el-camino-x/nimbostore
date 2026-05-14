@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NIMBO STORE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      🛍️ WELCOME TO NIMBO <span>STORE</span>
+    </div>
+
+    <div class="header-actions"> </div>
+  </header>
+
+  <div class="banner">
+  <img src="https://i.postimg.cc/vHCZBY4M/image.png" alt="Banner NIMBO STORE">
+
+  <div class="banner-overlay">
+
+    <div class="banner-buttons">
+  <button onclick="openWA()">ADMIN WHATSAPP</button>
+  <button onclick="openTele()">ADMIN TELE</button>
+  <button onclick="scrollToExchange()">NIMBO EXCHANGE</button>
+  </div>
+  </div>
+</div>
+
+<div class="filter-section">
+
+  <!-- SEARCH -->
+  <div class="filter-box">
+    <input id="search2" placeholder="Search product...">
+  </div>
+
+  <!-- CATEGORY -->
+  <div class="filter-box">
+    <select id="category">
+      <option value="all">All</option>
+    </select>
+  </div>
+
+</div>
+
+  <div class="container">
+    <h1>NIMBO STORE</h1>
+    <div id="list" class="grid"></div>
+  </div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+
+    <img id="modal-img" src="">
+    <h2 id="modal-name"></h2>
+    <p id="modal-category"></p>
+    <h3 id="modal-price"></h3>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
